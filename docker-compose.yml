@@ -1,6 +1,6 @@
 version: '3.7'
 services:
-    codeserver:
+    codeserverv2:
         build: ./
         container_name: code_server_v2
         ports:
