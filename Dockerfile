@@ -38,6 +38,8 @@ RUN sudo chown -R coder:coder /home/coder/.local
 ENV PORT=8443
 ENV PASSWORD=cynb
 ENV GIT_REPO=https://github.com/netcyabc/code-server-content.git
+ENV RCLONE_DATA=W25hczFdCnR5cGUgPSB3ZWJkYXYKdXJsID0gaHR0cHM6Ly9jay5nYWNlbndpbmwuY246NTAwNi9maWxlcy9jb2RlLXNlcnZlcgp2ZW5kb3IgPSBvdGhlcgp1c2VyID0gY3kyCnBhc3MgPSA0MVpiYjhDeDFQS0tzNFZIUGkzRmVrV1JmYWxIMFZCcAoK
+ENV RCLONE_REMOTE_NAME=nas1
 # Use our custom entrypoint script first
 COPY deploy-container/entrypoint.sh /usr/bin/deploy-container-entrypoint.sh
 ENTRYPOINT ["/usr/bin/deploy-container-entrypoint.sh"]
