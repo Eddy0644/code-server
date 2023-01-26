@@ -1,7 +1,7 @@
 version: '3.7'
 services:
     codeserver:
-        build: ../
+        build: ./
         container_name: code
         ports:
           # With SSL
